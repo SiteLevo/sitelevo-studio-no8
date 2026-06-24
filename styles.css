@@ -94,7 +94,7 @@ img{max-width:100%;display:block}
 .hero::after{content:"";position:absolute;inset:0;background:
   radial-gradient(900px 420px at 88% -8%, rgba(234,222,199,.16), transparent 60%);
   pointer-events:none}
-.hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;padding:92px 0 96px}
+.hero__grid{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:center;padding:80px 0 84px}
 .hero h1{color:#fff;margin-bottom:20px}
 .hero h1 .accent{color:var(--creme);font-style:italic}
 .hero p{color:rgba(255,255,255,.82);font-size:1.16rem;max-width:46ch;margin-bottom:30px}
@@ -104,7 +104,7 @@ img{max-width:100%;display:block}
 .hero__badge{
   position:absolute;left:-18px;bottom:26px;background:var(--creme);color:var(--bordeaux);
   padding:14px 20px;border-radius:14px;box-shadow:var(--shadow);font-weight:600;font-size:.92rem;
-  display:flex;align-items:center;gap:10px
+  display:flex;align-items:center;gap:10px;z-index:3
 }
 .hero__badge b{font-family:'Playfair Display',serif;font-size:1.5rem;display:block;line-height:1}
 
@@ -242,13 +242,13 @@ img{max-width:100%;display:block}
   .nav__links a{padding:13px 6px;border-bottom:1px solid var(--line)}
   .nav__links a.nav__cta{margin:12px 0 0;border-bottom:0;justify-content:center;border-radius:10px;padding:14px}
   .nav__toggle{display:block}
-  .sticky-cta{display:flex}
+  .sticky-cta.visible{display:flex}
   body{padding-bottom:74px}
 }
 @media (max-width:900px){
   .hero__grid{grid-template-columns:1fr;gap:34px;padding:54px 0 64px}
   .split,.contact-grid{grid-template-columns:1fr;gap:34px}
-  .hero__media{order:-1;max-width:360px;margin:0 auto}
+  .hero__media{order:-1;max-width:none;margin:0}
   .hero h1,.hero p{max-width:none}
   .grid-3{grid-template-columns:repeat(2,1fr)}
   .usp-grid{grid-template-columns:1fr;gap:28px}
@@ -256,7 +256,9 @@ img{max-width:100%;display:block}
 }
 @media (max-width:680px){
   .section{padding:56px 0}
-  .grid-2,.grid-3,.gallery{grid-template-columns:1fr}
+  .grid-2,.grid-3{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr;gap:10px}
+  .gallery .ph,.gallery .ph.tall{grid-row:auto;aspect-ratio:1/1}
   .footer__grid{grid-template-columns:1fr;gap:26px}
   .hero__badge{left:0}
   .cta-band{padding:40px 24px}

@@ -24,4 +24,14 @@
       a.addEventListener('click', function () { links.classList.remove('open'); });
     });
   }
+
+  // Fast Ring/Book-bjælke vises først, når hero er scrollet forbi
+  var sticky = document.querySelector('.sticky-cta');
+  var topBlock = document.querySelector('.hero') || document.querySelector('.page-hero');
+  if (sticky && topBlock) {
+    var stickyToggle = function () {
+      sticky.classList.toggle('visible', window.scrollY > topBlock.offsetHeight - 40);
+    };
+    stickyToggle(); window.addEventListener('scroll', stickyToggle, { passive: true });
+  }
 })();
