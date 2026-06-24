@@ -261,5 +261,7 @@ img{max-width:100%;display:block}
   .gallery .ph,.gallery .ph.tall{grid-row:auto;aspect-ratio:1/1}
   .footer__grid{grid-template-columns:1fr;gap:26px}
   .hero__badge{left:0}
+  .hero__cta{flex-wrap:nowrap}
+  .hero__cta .btn{flex:1 1 0;padding:14px 8px;font-size:.9rem}
   .cta-band{padding:40px 24px}
 }
