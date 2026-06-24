@@ -1,0 +1,32 @@
+STUDIO No. 8 - billed-pladser
+=================================
+
+Læg billederne i denne mappe (images) med præcis disse filnavne.
+Når billederne ligger her, sætter Claude dem ind på de rigtige pladser.
+De grafiske felter på siden viser, hvor billederne kommer, og i hvilket format.
+
+FORSIDE (index.html)
+- hero.jpg ............... stort billede i toppen. Stående format, ca. 3:4. Salon eller model.
+- salon.jpg .............. afsnittet "Tid til dig selv". Liggende, ca. 16:10. Stemning i salonen.
+- behandling-klip.jpg .... kortet "Klip og styling". Liggende, ca. 16:10.
+- behandling-farve.jpg ... kortet "Farve og toning". Liggende, ca. 16:10.
+- behandling-balayage.jpg  kortet "Balayage og reflekser". Liggende, ca. 16:10.
+
+OM OS (om-os.html)
+- salon-2.jpg ........... afsnittet "En salon, hvor du føler dig hjemme". Stående, ca. 3:4.
+- team.jpg ............. ét fælles holdbillede (fx jeres Team_3884.jpg). Liggende, ca. 16:9.
+
+GALLERI (galleri.html)
+- galleri-1.jpg til galleri-8.jpg ... klip, farver, før og efter.
+  Billede 2 og 6 vises i højere format (stående). Resten er kvadratiske.
+
+BOOK TID (book-tid.html)
+- konsultation.jpg ..... afsnittet "Book en gratis konsultation". Liggende, ca. 16:10.
+
+KONTAKT (kontakt.html)
+- Intet billede. Her vises et Google-kort over adressen.
+
+Gode råd til billeder:
+- Brug skarpe billeder i god opløsning (mindst 1200 px på den lange led).
+- Ensartet lys og stemning får siden til at hænge sammen.
+- Undgå tekst og logo brændt ind i billedet.

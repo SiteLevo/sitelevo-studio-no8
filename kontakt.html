@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt - Studio No. 8</title>
+<meta name="description" content="Kontakt Studio No. 8 på Amagerbrogade 101, 2300 København S. Ring, skriv eller kig forbi. Se åbningstider og find vej.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html" class="brand">Studio No. 8</a>
+    <nav class="nav__links">
+      <a href="index.html">Forside</a>
+      <a href="om-os.html">Om os</a>
+      <a href="behandlinger.html">Behandlinger</a>
+      <a href="galleri.html">Galleri</a>
+      <a href="kontakt.html" class="active">Kontakt</a>
+      <a href="book-tid.html" class="btn btn--primary nav__cta">Book tid</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap reveal">
+    <p class="eyebrow">Kontakt</p>
+    <h1>Kig forbi eller skriv til os</h1>
+    <p class="lead">Du finder os midt på Amagerbrogade. Ring, skriv en besked, eller book din tid online, når det passer dig.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-grid">
+
+    <!-- Formular -->
+    <div class="reveal">
+      <h2 style="margin-bottom:18px">Send en besked</h2>
+      <form onsubmit="event.preventDefault(); alert('Tak for din besked. Dette er et preview, og formularen kobles til e-mail eller Jotform, før siden går live.');">
+        <div class="field">
+          <label for="navn">Navn</label>
+          <input id="navn" name="navn" type="text" placeholder="Dit navn" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="dig@eksempel.dk" required>
+        </div>
+        <div class="field">
+          <label for="besked">Besked</label>
+          <textarea id="besked" name="besked" rows="5" placeholder="Skriv din besked her" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Send besked</button>
+        <p class="muted" style="font-size:.82rem;margin-top:12px">Vil du booke en tid? Brug <a href="book-tid.html" style="color:var(--bordeaux);font-weight:600">online booking</a>, så får du svar med det samme.</p>
+      </form>
+    </div>
+
+    <!-- Info -->
+    <div class="reveal">
+      <div class="info-row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><strong>Adresse</strong><br>Amagerbrogade 101<br>2300 København S</div></div>
+      <div class="info-row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l1.6 4-2 1.4a11 11 0 0 0 5 5l1.4-2 4 1.6v3a1.5 1.5 0 0 1-1.6 1.5A15 15 0 0 1 3.5 6.6 1.5 1.5 0 0 1 5 4z"/></svg></span><div><strong>Telefon</strong><br><a href="tel:+4523435687">+45 23 43 56 87</a></div></div>
+      <div class="info-row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><div><strong>E-mail</strong><br><a href="mailto:Mona.juhl@gmail.com">Mona.juhl@gmail.com</a></div></div>
+      <div class="info-row"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></span><div><strong>Følg os</strong><br><a href="https://instagram.com/studiono.8" target="_blank" rel="noopener">Instagram</a> og <a href="https://facebook.com/StudioNo.8" target="_blank" rel="noopener">Facebook</a></div></div>
+
+      <h3 style="margin:28px 0 6px">Åbningstider</h3>
+      <ul class="hours">
+        <li><span>Mandag til fredag</span><span>09:00 - 18:00</span></li>
+        <li><span>Lørdag</span><span>09:00 - 14:00</span></li>
+        <li><span>Søndag</span><span class="muted">Lukket</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:40px">
+    <div class="map reveal">
+      <iframe title="Kort - Amagerbrogade 101" loading="lazy" src="https://maps.google.com/maps?q=Amagerbrogade%20101%2C%202300%20K%C3%B8benhavn%20S&z=15&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="brand">Studio No. 8</a>
+        <p style="margin-top:14px;max-width:34ch">Frisørsalon på Amagerbrogade i København S. Håndværk, hygge og online booking.</p>
+        <div class="social">
+          <a href="https://instagram.com/studiono.8" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://facebook.com/StudioNo.8" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.78-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Sider</h4>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="om-os.html">Om os</a></li>
+          <li><a href="behandlinger.html">Behandlinger</a></li>
+          <li><a href="galleri.html">Galleri</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Amagerbrogade 101</li>
+          <li>2300 København S</li>
+          <li><a href="tel:+4523435687">+45 23 43 56 87</a></li>
+          <li><a href="mailto:Mona.juhl@gmail.com">Mona.juhl@gmail.com</a></li>
+          <li style="margin-top:8px;opacity:.8">Man-fre 09-18 · Lør 09-14 · Søn lukket</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Studio No. 8 · CVR DK23650984</span>
+      <span><a href="privatlivspolitik.html">Privatlivspolitik</a> · Hjemmeside af Sitelevo</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="tel:+4523435687" class="btn btn--outline">Ring</a>
+  <a href="book-tid.html" class="btn btn--primary">Book tid</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
